@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNews Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">TechNews Hub</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="pages/categories.html">Categories</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/login.html" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero">
+            
+            <span id = "element"></span>
+        </header>
+
+        <section id="featured-articles" class="articles-grid">
+            <!-- Articles will be dynamically inserted here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TechNews Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/articles.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <!-- Element to contain animated typing -->
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Welcome to','The TechNews Hub','Latest in Tech News', 'Stay updated with the latest technology trends and breakthroughs'],
+      typeSpeed: 60,
+      loop : true,
+      startDelay: 500,
+      backDelay: 1000,
+      backSpeed: 20,
+      showCursor: false,
+    });
+  </script>
+</body>
+</body>
+</html>
